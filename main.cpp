@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cstring>
+#include <fstream>
 #include <cstdio>
 using namespace std;
 
@@ -49,6 +50,16 @@ int main()
         AS A STRING, THE SECOND LINE IS A NUMBER WHICH REPRESENTS THEIR STRENGTH
         AND THE THIRD LINE IS A NUMBER REPRESENTING THEIR INTELLIGENCE
         */
+//-----------------------------------------------------------------------------------//
+    ifstream myfile2;
+    myfile2.open("Player.dat");
+    string line;
+
+    myfile2 >> line >> name >> line >> strength >> line >> intelligence >> line;
+    myfile2.close();
+
+//-----------------------------------------------------------------------------------//
+
     }else if(input == 'q'){
         cout << "Thanks for playing\n";
         return 0;
@@ -119,12 +130,6 @@ int main()
             YOU MAY NEED TO COORDINATE WITH CHANCE TO ENSURE THAT YOU ARE BOTH
             SAVING AND LOADING IN THE SAME FORMAT.
             */
-            cout << "Saving...\n";
-        }else{
-            cout << "Invalid input.\n";
-        }
-    }
-
     return 0;
 }
 
