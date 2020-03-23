@@ -50,6 +50,7 @@ int main()
         AS A STRING, THE SECOND LINE IS A NUMBER WHICH REPRESENTS THEIR STRENGTH
         AND THE THIRD LINE IS A NUMBER REPRESENTING THEIR INTELLIGENCE
         */
+        //Completed
 //-----------------------------------------------------------------------------------//
     ifstream myfile2;
     myfile2.open("Player.dat");
@@ -130,9 +131,13 @@ int main()
             YOU MAY NEED TO COORDINATE WITH CHANCE TO ENSURE THAT YOU ARE BOTH
             SAVING AND LOADING IN THE SAME FORMAT.
             */
-    return 0;
+            cout << "Saving...\n";
+        }else{
+            cout << "Invalid input.\n";
         }
     }
+
+    return 0;
 }
 
 bool isValidInput(char input){
