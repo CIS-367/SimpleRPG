@@ -131,6 +131,8 @@ int main()
             SAVING AND LOADING IN THE SAME FORMAT.
             */
     return 0;
+        }
+    }
 }
 
 bool isValidInput(char input){
