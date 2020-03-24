@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cstring>
+#include <fstream>
 #include <cstdio>
 using namespace std;
 
@@ -49,6 +50,17 @@ int main()
         AS A STRING, THE SECOND LINE IS A NUMBER WHICH REPRESENTS THEIR STRENGTH
         AND THE THIRD LINE IS A NUMBER REPRESENTING THEIR INTELLIGENCE
         */
+        //Completed
+//-----------------------------------------------------------------------------------//
+    ifstream myfile2;
+    myfile2.open("Player.dat");
+    string line;
+
+    myfile2 >> line >> name >> line >> strength >> line >> intelligence >> line;
+    myfile2.close();
+
+//-----------------------------------------------------------------------------------//
+
     }else if(input == 'q'){
         cout << "Thanks for playing\n";
         return 0;
