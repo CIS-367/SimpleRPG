@@ -89,6 +89,24 @@ int main()
             AND INTELLIGENCE.  PLAYERS MUST USE 100 POINTS AND
             STRENGTH + INTELLIGENCE MUST EQUAL 100 WHEN THEY'RE DONE.
             */
+
+            ///Completed
+//------------------------------------------------------------------------------------------------------------------------------------//
+
+            cout << "Enter your player's Strength and Intelligence values.\n*** Strength + Intelligence MUST = 100 ***" << endl;
+            do{
+                cout << "\nStrength: ";
+                cin >> strength;
+                cout << "\nIntelligence: ";
+                cin >> intelligence;
+
+                if((strength + intelligence) < 100 || (strength + intelligence) > 100){
+                    cout << "\n*** ERROR: Strength + Intelligence MUST = 100 ***" << endl;
+                }
+            }while((strength + intelligence) < 100 || (strength + intelligence) > 100);
+
+//------------------------------------------------------------------------------------------------------------------------------------//
+
             break;
         }
     }
