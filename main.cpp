@@ -131,6 +131,14 @@ int main()
             YOU MAY NEED TO COORDINATE WITH CHANCE TO ENSURE THAT YOU ARE BOTH
             SAVING AND LOADING IN THE SAME FORMAT.
             */
+
+            ofstream myfile;
+            myfile.open("Player.dat");
+            myfile << "Name: " << name << "\n";
+            myfile << "Strength: " << strength << "\n";
+            myfile << "Intelligence: " << intelligence << "\n";
+            myfile.close();
+
             cout << "Saving...\n";
         }else{
             cout << "Invalid input.\n";
